@@ -47,7 +47,7 @@ function App() {
               style={{ backgroundColor: item.color }}
               className={`color ${selected === index && 'selected'}`}
             >
-              {index}
+
             </div>
           ))}
         </div>
