@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div id="screen">
-
       <header>
         <BiArrowBack size={28} color="#35323F" cursor="pointer" />
         <span className="title">Product {selected}</span>
@@ -40,6 +39,8 @@ function App() {
           </div>
         </div>
 
+        {/*Para cada item, ele irá associar a cor com a imagem da const colors*/}
+
         <div className="colors">
           {colors.map((item, index) => (
             <div
@@ -47,7 +48,6 @@ function App() {
               style={{ backgroundColor: item.color }}
               className={`color ${selected === index && 'selected'}`}
             >
-
             </div>
           ))}
         </div>
